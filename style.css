@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.cont{
+    margin: auto;
+    max-width: 1300px;
+    padding-inline: 20px;
+}
+
+/* Navbar */
+.nav-wrap{
+    padding-right: 20px;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}
+
+.bg{
+    background-color: white;
+}
+
+header{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+nav a{
+    margin-right: 60px;
+}
+
+.nav-line{
+    display: inline-block;
+    width: 2px;
+    height: 90%;
+    background-color: black;
+    rotate: 20deg;
+    border-radius: 50%;
+}
+
+.nav-wrap::after{
+    display: block;
+    content: '';
+    width: 100vw;
+    height: 1px;
+    background-color: black;
+}
+
+/* Hero */
+.hero-wrap{
+    padding-top: 70px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    font-size:10vw;
+}
+
+.left{
+    padding-right: 10vw;
+}
+
+.right{
+    padding-left: 10vw;
+}
+
+.hero-bg {
+    background-image: url(https://www.smartcitiesworld.net/AcuCustom/Sitename/DAM/011/news-data-jan18-interabi.jpg);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.dark {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.144);
+}
+
+/* Section1 */
+.section1-wrap{
+    padding-block: 60px;
+}
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+}
+
+h3{
+    padding-block: 30px;
+    font-size: 50px;
+}
+
+.main-sec{
+    width: 47%;
+}
+
+.main-sec p{
+    font-size: 20px;
+}
+
+.section1 img{
+    width: 47%;
+    height: 100%;
+}
+
+/* Section2 */
+.rev{
+    flex-direction: row-reverse;
+}
+
+.pad-top{
+    padding-top: 100px;
+}
+
+/* Footer */
+.footer-wrap{
+    background-color: #002A32;
+    height: 70px;
+}
+
+.footer{
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer span{
+    font-size: 20px;
+}
